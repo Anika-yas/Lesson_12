@@ -6,16 +6,15 @@
 	overflow: hidden;
 }
 body{
-    /* background: url(../img/1616996765_11-p-fon-priroda-dlya-detei-11.jpg) center bottom / cover no-repeat; */
-    background: url(../img/1.jpg) bottom left / cover no-repeat;
-
+    background: rgb(62,255,87);
+    background: linear-gradient(0deg, rgba(62,255,87,1) 0%, rgba(142,244,241,1) 56%);
 }
 .main__container {
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto ;
 }
 .main{
-    padding: 300px 700px;
+    padding: 300px;
 }
 .blue-tractor__all {
     position: relative;
@@ -358,7 +357,11 @@ body{
 .glare-3__mouth {
     position: absolute;
     bottom: 50px;
-    border-radius: 40%;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 60%;
+    border-bottom-left-radius: 60%;
+
     right: 16px;
     width: 55px;
     height: 15px;
@@ -380,7 +383,7 @@ body{
 }
 .glare-3__teech-bottom {
     position: absolute;
-    top: 10px;
+    top: 9px;
     left: 17px;
     width: 30px;
     height: 10px;
