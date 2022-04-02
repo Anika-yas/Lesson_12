@@ -14,18 +14,20 @@ body{
     margin: 0 auto ;
 }
 .main{
-    padding: 300px;
+    padding: 300px 0;
 }
-.blue-tractor__all {
+.blue-tractor {
     position: relative;
+    width: 600px;
+    /* height: 600px; */
+    margin: 0 auto;
 
 }
 
 
 
-/* ======================== rectangle__body1 ======================*/
-
-.rectangle__body-1 {
+/* ======================== cabin ======================*/
+.cabin {
     position: absolute;
     top: 0;
     left: 0;
@@ -35,7 +37,7 @@ body{
     z-index: 2;
 }
 
-.rectangle__circle-top-1{
+.cabin__roof {
     width: 220px;
     height: 80px;
     border-radius: 50%;
@@ -45,10 +47,8 @@ body{
     background-color: rgb(75, 217, 236);
     transform: rotate(-15deg);
 }
-
-/* =========  rectangle__glare ===========*/
-
-.rectangle__glare-top {
+/* =========  roofe__glare ===========*/
+.roof-glare {
     width: 230px;
     height: 80px;
     position: absolute;
@@ -57,10 +57,8 @@ body{
     /* border: 3px solid rgb(75, 236, 88);; */
     z-index: 10;
     overflow: hidden;
-
 }
-
-.rectangle__glare-top-1 {
+.roof-glare__1 {
     width: 230px;
     height: 100px;
     border-radius: 50%;
@@ -69,23 +67,21 @@ body{
     left: -6px;
     background: rgb(173,236,255);
     background: radial-gradient(circle, rgba(173,236,255,1) 0%, rgba(223,250,255,1) 100%);    
-    z-index: 10;
+    /* z-index: 10; */
     border: 3px solid rgb(89, 102, 133);
-
 }
-.rectangle__glare-top-2 {
+.roof-glare__2 {
     width: 300px;
     height: 220px;
     border-radius: 50%;
     position: absolute;
     top: 25px;
     left: -50px;
-    z-index: 10;
+    /* z-index: 10; */
     transform: rotate(-10deg);
     background-color: rgb(75, 217, 236);;
 }
-
-.rectangle__circle-left{
+.cabin__left{
     width: 50px;
     height: 260px;
     bottom: 0;
@@ -93,7 +89,7 @@ body{
     position: absolute;
     overflow: hidden;
 }
-.rectangle__circle-1-2 {
+.cabin__border {
     width: 50px;
     height: 300px;
     border-radius: 50%;
@@ -102,9 +98,8 @@ body{
     left: -30px;
     z-index: 1;
     border-right: 3px solid rgb(89, 102, 133);
-
 } 
-.rectangle__1 {
+.parts-cabin {
     width: 237px;
     height: 260px;
     background-color: rgb(75, 217, 236);
@@ -113,7 +108,7 @@ body{
     bottom: 0;
     left: 0;
 }
-.rectangle__line{
+.parts-cabin__stage{
     position: absolute;
     bottom: 10px;
     right: 62px;
@@ -127,13 +122,13 @@ body{
     border-bottom-right-radius: 50%;
     transform: rotate(-5deg);
 }
-.rectangle__line:nth-child(2){
+.parts-cabin__stage:nth-child(2){
     bottom: 25px;
 }
-.rectangle__line:nth-child(3){
+.parts-cabin__stage:nth-child(3){
     bottom: 40px;
 }
-.rectangle__glare{
+.parts-cabin__shadow{
     width: 70px;
     height: 310px;
     position: absolute;
@@ -153,9 +148,8 @@ body{
     z-index: 10;
     box-shadow: inset 2px 2px 7px rgb(63, 75, 104);
     border: 1px solid rgb(63, 75, 104);
-
 }
-.rectangle__window-1 {
+.parts-cabin__window-1 {
     width: 50px;
     height: 110px;
     top: -20px;
@@ -165,10 +159,32 @@ body{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 20px ;
     transform: rotate(0deg);
-    
 }
 
-.rectangle__door{
+.parts-cabin__window-2 {
+    width: 80px;
+    height: 130px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+    top: -40px;
+    left: 90px;
+}
+.parts-cabin__window-3 {
+    width: 50px;
+    height: 120px;
+    top: -35px;
+    left: 190px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 40px ;
+    transform: rotate(-5deg);
+}
+/* -----------door -------------- */
+
+.parts-cabin__door{
     width: 100px;
     height: 250px;
     border-top: 3px solid rgb(89, 102, 133);
@@ -182,7 +198,7 @@ body{
     overflow: hidden;
     box-shadow: inset 2px 2px 3px rgb(89, 102, 133);
 }
-.rectangle__door-circle{
+.parts-cabin__door-3{
     width: 200px;
     height: 203px;
     border-radius: 50%;
@@ -190,9 +206,8 @@ body{
     position: absolute;
     bottom: -150px;
     right: 25px;
-
 }
-.rectangle__door-1{
+.parts-cabin__door-1{
     width: 2px;
     height: 200px;
     border-left: 3px solid rgb(89, 102, 133);
@@ -200,7 +215,7 @@ body{
     top: 0;
     left: 0px;
 }
-.rectangle__door-2{
+.parts-cabin__door-2{
     width: 40px;
     height: 2px;
     border-bottom: 3px solid rgb(89, 102, 133);
@@ -208,33 +223,7 @@ body{
     bottom: 0px;
     right: 0px;
 }
-.rectangle__window-2 {
-    width: 80px;
-    height: 130px;
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px ;
-    top: -40px;
-    left: 90px;
-}
-.rectangle__window-3 {
-    width: 50px;
-    height: 120px;
-    top: -35px;
-    left: 190px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 80px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 40px ;
-    transform: rotate(-5deg);
-}
-
-
-
-
-
-.rectangle__circle-1-3 {
+.cabin__right {
     width: 50px;
     height: 300px;
     border-radius: 50%;
@@ -244,13 +233,12 @@ body{
     right: 0;
     z-index: 2;
     border-right: 3px solid rgb(89, 102, 133);
-
 } 
 
 
-/* ===================== rectangle__body2 ===============*/
+/* ===================== engine =======================*/
 
-.rectangle__body-2 {
+.engine {
     position: absolute;
     width: 200px;
     height: 180px;
@@ -261,7 +249,7 @@ body{
     z-index: 3;
 
 }
-.rectangle__2 {
+.engine__body {
     width: 160px;
     height: 180px;
     border-top-left-radius: 80px;
@@ -275,46 +263,8 @@ body{
     border-top: 3px solid rgb(89, 102, 133);
 }
 
-/* ======== glare ===============*/
-.rectangle__glare-2-top {
-    width: 170px;
-    height: 50px;
-    position: absolute;
-    z-index: 5;
-    right: 6px;
-    top: 3px;
-    border-top-left-radius: 100px;
-    border-top-right-radius: 80px;
-    overflow: hidden;
-
-
-}
-.rectangle__glare-2-top-1 {
-    width: 400px;
-    height: 150px;
-    border-radius: 50%;
-    position: absolute;
-    top: 5px;
-    right: -55px;
-    border: 25px solid rgb(187, 253, 255);
-    transform: rotate(-13deg);
-
-}
-.rectangle__glare-2-top-2 {
-    width: 30px;
-    height: 7px;
-    border-radius: 40%;
-    position: absolute;
-    top: 5px;
-    right: 50px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 2px 4px 15px 1px rgb(233, 233, 233);    
-    z-index: 5;
-    transform: rotate(-5deg);
-}
-
-/* ======== rectangle__circle ===============*/
-.rectangle__circle-right {
+/* ======== bonnet===============*/
+.bonnet {
     width: 100px;
     height: 160px;
     border-radius: 50%;
@@ -327,12 +277,21 @@ body{
     border-right: 3px solid rgb(89, 102, 133);
     overflow: hidden;
 }
-.glare-2-top-2{
+.bonnet__right{
+    width: 110px;
+    height: 250px;
+    border-radius: 50%;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -50px;
+    left: -50px;
+    z-index: 5;
+    border-right: 3px solid rgb(89, 102, 133);
+    background-color: rgb(75, 217, 236);
 }
-.glare-3{
+
+/* ======== gratings ===============*/
+
+.grating{
     width: 20px;
     height: 5px;
     background-color: rgb(89, 102, 133);
@@ -348,22 +307,22 @@ body{
     transform: rotate(5deg);
     z-index: 5;
 }
-.glare-3:nth-child(2){
+.grating:nth-child(2){
     top: 35px;
     right: 14px;
     transform: scale(1.2);
 }
-.glare-3:nth-child(3){
+.grating:nth-child(3){
     top: 50px;
     right: 14px;
     transform: scale(1.4, 1.2);
 }
-.glare-3:nth-child(4){
+.grating:nth-child(4){
     top: 65px;
     right: 13px;
     transform: scale(1.6, 1.2);
 }
-.glare-3:nth-child(5){
+.grating:nth-child(5){
     top: 80px;
     right: 14px;
     transform: scale(1.4, 1.2);
@@ -373,8 +332,8 @@ body{
     right: 15px;
     transform: scale(1.2);
 }
-/* ======================== glare-3__mouth======================*/
-.glare-3__mouth {
+/* ======================== mouth======================*/
+.mouth {
     position: absolute;
     bottom: 50px;
     border-top-left-radius: 30%;
@@ -392,7 +351,7 @@ body{
     z-index: 5;
     overflow: hidden;
 }
-.glare-3__teech-top {
+.mouth__top {
     position: absolute;
     top: -3px;
     left: 15px;
@@ -401,7 +360,7 @@ body{
     border-radius: 50%;
     background-color: white;
 }
-.glare-3__teech-bottom {
+.mouth__bottom {
     position: absolute;
     top: 9px;
     left: 17px;
@@ -410,17 +369,18 @@ body{
     border-radius: 50%;
     background-color: white;
 }
-/* ======================== glare-3__eyes ======================*/
-.glare-3__eyes {
+/* ======================== eye ======================*/
+
+.eye {
     position: absolute;
-    top:50px;
+    top: 50px;
     right: 60px;
     width: 50px;
     height: 40px;
     z-index: 5;
     transform: rotate(15deg);
 }
-.glare-3__eyes-1 {
+.eye__1 {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -431,7 +391,7 @@ body{
     background-color:   rgb(34, 57, 58);
     border: 2px solid rgb(47, 58, 82);
 }
-.glare-3__eyes-2 {
+.eye__2 {
     position: absolute;
     top: -3px;
     right: -5px;
@@ -442,7 +402,7 @@ body{
     box-shadow: inset 1px 0px 3px 1px rgb(157, 190, 197);
     background-color: white;
 }
-.glare-3__eyes-3 {
+.eye__3 {
     position: absolute;
     top: 6px;
     right: 5px;
@@ -452,7 +412,7 @@ body{
     background-color: black;
 }
 
-.glare-3__eyes-4 {
+.eye__4 {
     position: absolute;
     top: 12px;
     right: 10px;
@@ -461,38 +421,59 @@ body{
     border-radius: 50%;
     background-color: rgb(255, 255, 255);
 }
-.rectangle__circle-right-1{
-    width: 110px;
-    height: 250px;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    z-index: 5;
-    border-right: 3px solid rgb(89, 102, 133);
-    background-color: rgb(75, 217, 236);
-}
-.eyes-right{
+
+.eye-right{
     position: absolute;
     top: 145px;
     left: 365px;
     z-index: 1;
 }
 
-.rectangle__circle {
+/* ======== glare ===============*/
+
+.engine__top {
+    width: 170px;
+    height: 50px;
+    position: absolute;
+    z-index: 5;
+    right: 6px;
+    top: 3px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 80px;
+    overflow: hidden;
+
+
 }
-.rectangle_ {
+.engine__shadow {
+    width: 400px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    right: -55px;
+    border: 25px solid rgb(187, 253, 255);
+    transform: rotate(-13deg);
+
 }
-
-
-
+.engine__glare {
+    width: 30px;
+    height: 7px;
+    border-radius: 40%;
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 4px 15px 1px rgb(233, 233, 233);    
+    z-index: 5;
+    transform: rotate(-5deg);
+}
 
 
 /* ======================== wheel__beeg ======================*/
 
 .wheel__beeg{
 }
-.glare-3__parallelogram {
+.cooling-grate {
     position: absolute;
     top: 150px;
     left: 230px;
@@ -505,7 +486,7 @@ body{
     transform: skew(-10deg, -10deg);
     border-radius: 10px;
 }
-.glare-3__parallelogram-1 {
+.trumpet {
     position: absolute;
     bottom: 10px;
     right: 30px;
@@ -515,10 +496,9 @@ body{
     background: linear-gradient(90deg, rgba(166,100,34,1) 14%, rgba(231,162,71,1) 84%);   
     border: 1px solid rgb(129, 74, 2); 
     box-shadow: inset 1px 1px 5px 2px rgba(129, 74, 2, 0.459);
-    
     transform: rotate(-10deg);
 }
-.glare-3__parallelogram-2 {
+.trumpet__1 {
     position: absolute;
     top: -2px;
     right: -1px;
@@ -530,7 +510,7 @@ body{
     transform: skew(0deg, 0deg);
 
 }
-.glare-3__parallelogram-3 {
+.trumpet__2 {
     position: absolute;
     bottom: 35px;
     right: -12px;
@@ -541,9 +521,8 @@ body{
     border-right: 10px solid transparent;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-
 }
-.glare-3__parallelogram-4 {
+.trumpet__3 {
     position: absolute;
     bottom: 60px;
     right: -4px;
@@ -553,10 +532,9 @@ body{
     background-color: #fff;
     transform: rotate(-5deg);
     box-shadow: 1px 1px 5px 3px rgba(255, 255, 255, 0.459);
-
 }
 
-.wheel__beeg-1 {
+.wheel {
     width: 200px;
     height: 200px;
     border-radius: 50%;
@@ -589,7 +567,7 @@ body{
     z-index: 1;
 
 }
-.rectangle__wheel-beeg{
+.protector{
     height: 210px;
     width: 20px;
     border-radius: 5px;
@@ -599,28 +577,28 @@ body{
     left: 90px;
     transform-origin: center;
 }
-.rectangle__wheel-beeg:nth-child(2){
+.protector:nth-child(2){
     transform: rotate(20deg);
 }
-.rectangle__wheel-beeg:nth-child(3){
+.protector:nth-child(3){
     transform: rotate(40deg);
 }
-.rectangle__wheel-beeg:nth-child(4){
+.protector:nth-child(4){
     transform: rotate(60deg);
 }
-.rectangle__wheel-beeg:nth-child(5){
+.protector:nth-child(5){
     transform: rotate(80deg);
 }
-.rectangle__wheel-beeg:nth-child(6){
+.protector:nth-child(6){
     transform: rotate(-20deg);
 }
-.rectangle__wheel-beeg:nth-child(7){
+.protector:nth-child(7){
     transform: rotate(-40deg);
 }
-.rectangle__wheel-beeg:nth-child(8){
+.protector:nth-child(8){
     transform: rotate(-60deg);
 }
-.rectangle__wheel-beeg:nth-child(9){
+.protector:nth-child(9){
     transform: rotate(-80deg);
 }
 /* --------glare------------ */
@@ -639,8 +617,6 @@ body{
     height: 170px;
     border-radius: 50%;
     background-color:  rgb(109, 109, 109);
-    /* border: 2px solid rgb(251, 255, 21); */
-
     position: absolute;
     top: 0px;
     left: -10px;
@@ -650,8 +626,6 @@ body{
     height: 200px;
     border-radius: 50%;
     background-color:  rgb(0, 0, 0);
-    /* border: 2px solid rgb(255, 0, 234); */
-
     position: absolute;
     top: 3px;
     left: -30px;
@@ -659,7 +633,7 @@ body{
 
 /* --------small------------ */
 
-.wheel__beeg-small {
+.rim {
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -669,7 +643,7 @@ body{
     left: 60px;
     z-index: 6;
 }
-.wheel__beeg-smallest {
+.bolt {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -681,28 +655,28 @@ body{
     z-index: 5;
     box-shadow: inset 2px -2px 3px rgb(46, 45, 45) ;
 }
-.smallest{
+.smallest-bolt{
     transform: scale(0.6);
     top: 15px;
     left: 5px;
 }
-.smallest:nth-child(2){
+.smallest-bolt:nth-child(2){
     top: 0px;
     left: 30px;
 }
-.smallest:nth-child(3){
+.smallest-bolt:nth-child(3){
     top: 15px;
     left: 55px;
 }
-.smallest:nth-child(4){
+.smallest-bolt:nth-child(4){
     top: 45px;
     left: 55px;
 }
-.smallest:nth-child(5){
+.smallest-bolt:nth-child(5){
     top: 60px;
     left: 30px;
 }
-.smallest:nth-child(6){
+.smallest-bolt:nth-child(6){
     top: 45px;
     left: 5px;
 }
